@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #3c3a39;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.landing {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  background-color: #1c1a19;
+  color: white;
+  background-image: url("resources/Illustration.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+h1 {
+  color: #ff6b00;
+  font-size: 3rem;
+}
+
+.landing > h3 {
+  margin: 10px 0;
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+.icons > i {
+  margin-right: 10px;
+}
