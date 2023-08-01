@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-nav {
+header {
   background-color: #3c3a39;
   color: white;
   display: flex;
@@ -28,16 +32,36 @@ nav {
 h1 {
   color: #ff6b00;
   font-size: 3rem;
+  font-family: "Crete Round", serif;
 }
 
-.landing > h3 {
+.landing > p {
   margin: 10px 0;
 }
 
-.icons {
+/* .icons {
   margin-top: 10px;
+} */
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap:5%;
 }
 
-.icons > i {
-  margin-right: 10px;
+
+
+.roboto {
+  font-family: "Roboto", sans-serif;
 }
+
+.description {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none; 
+  }
+  
