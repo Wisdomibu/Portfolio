@@ -63,15 +63,7 @@ For more information on the importance of a professional README for your reposit
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[Portfolio]** is a...
-
-## 🛠 Built With <a name="htmm and css"></a>
-
-### Tech Stack <a name="MERN"></a>
 
 > Describe the tech stack and include only the relevant sections that apply to your project.
 
