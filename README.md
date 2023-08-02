@@ -66,11 +66,11 @@ For more information on the importance of a professional README for your reposit
 
 > Describe your project in 1 or 2 sentences.
 
+**[Portfolio]** is a...
 
-## 🛠 Built With <a name="built-with"></a>
-1 - HTML.
-2 - CSS.
-### Tech Stack <a name="tech-stack"></a>
+## 🛠 Built With <a name="htmm and css"></a>
+
+### Tech Stack <a name="MERN"></a>
 
 
 <details>
