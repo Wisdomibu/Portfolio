@@ -97,10 +97,10 @@ a {
   margin: 10px 0;
 }
 
-.box > p {
+.box > li {
   padding: 5px;
   border: 1px solid black;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .button1 {
@@ -127,10 +127,10 @@ a {
   margin-top: 15px;
 }
 
-.box2 > p {
+.box2 > li {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 5px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   font-family: 'Inter', sans-serif;
 }
 
@@ -150,6 +150,9 @@ a {
   border: none;
   padding: 10px;
   width: 330px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .about {
@@ -159,14 +162,14 @@ a {
   background-position: bottom right;
   height: 90vh;
   padding: 30px;
-  margin-top: 90px;
+  margin-top: 120px;
 }
 
 .about > h2 {
   color: rgba(255, 107, 0, 1);
   font-family: "Crete Round", serif;
   font-size: 60px;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .about > p {
@@ -192,12 +195,17 @@ a {
   padding-bottom: 100px;
 }
 
-.language > p {
+.language > ul > li {
   margin-top: 20px;
   font-family: 'Inter', sans-serif;
 }
 
-.lang > h3 {
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.lang > li >  h3 {
   font-size: 25px;
   margin-left: 10px;
   font-family: 'Inter', sans-serif;

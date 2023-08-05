@@ -66,7 +66,7 @@ For more information on the importance of a professional README for your reposit
 
 > Describe your project in 1 or 2 sentences.
 
-**[Portfolio]** is a...
+**[Portfolio]** is a simple HTML and CSS project of a website that would be used to showcase various projects I have done.
 
 ## 🛠 Built With <a name="htmm and css"></a>
 
@@ -137,7 +137,6 @@ Example command:
 
 ```sh
   cd Portfolio
-  npm install
 ```
 ### Usage
 
