@@ -281,25 +281,23 @@ footer {
   display: block;
 }
 
-.navIcon{
+.navIcon {
   display: none;
 }
-
-
 
 @media screen and (min-width: 768px) {
   nav > .fa-bars {
     display: none;
   }
 
-  .navIcon{
+  .navIcon {
     display: flex;
-    gap:20px
+    gap: 20px;
   }
 
-  
 
-.hide-mobile {
+
+  .hide-mobile {
     display: block;
   }
 
@@ -307,14 +305,14 @@ footer {
     display: none;
   }
 
-  
+
 
   header {
     padding: 20px 70px;
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
-  header > a{
+  header > a {
     font-size: 20px;
   }
 
@@ -390,9 +388,8 @@ footer {
 
   .card1-text > p {
     font-size: 20px;
-  font-family: "Inter", sans-serif;
-  width: 445px;
-
+    font-family: "Inter", sans-serif;
+    width: 445px;
   }
 
   .card2-parent {
@@ -476,13 +473,13 @@ footer {
     padding: 0 200px;
   }
 
-  .card2-parent-desktop{
+  .card2-parent-desktop {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
   }
 
-  .img{
+  .img {
     width: 330px;
   }
 }
