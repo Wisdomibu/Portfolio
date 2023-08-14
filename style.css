@@ -295,8 +295,6 @@ footer {
     gap: 20px;
   }
 
-
-
   .hide-mobile {
     display: block;
   }
@@ -304,8 +302,6 @@ footer {
   .hide-desktop {
     display: none;
   }
-
-
 
   header {
     padding: 20px 70px;
@@ -481,5 +477,33 @@ footer {
 
   .img {
     width: 330px;
+  }
+
+  .card2:hover .card-text {
+    display: none;
+  }
+
+  .button2 {
+    display: none;
+  }
+
+  .card2:hover .button2 {
+    display: block;
+  }
+
+  .card2:hover {
+    background-image: url("resources/Img Placeholder (2).png");
+  }
+
+  .b {
+    display: none;
+  }
+
+  .card2:hover .b {
+    display: block;
+  }
+
+  .card2:hover .a {
+    display: none;
   }
 }
