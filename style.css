@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:ital,wght@0,300;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
   margin: 0;
@@ -21,8 +21,7 @@ header {
   height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 15px;
+  padding: 100px 15px;
   background-color: #1c1a19;
   color: white;
   background-image: url("resources/Illustration.png");
@@ -32,17 +31,23 @@ header {
 
 h1 {
   color: #ff6b00;
-  font-size: 3rem;
+  font-size: 56px;
   font-family: "Crete Round", serif;
 }
 
-.landing > p {
-  margin: 10px 0;
+.card-text > p {
+  font-family: "Inter", sans-serif;
 }
 
-/* .icons {
-  margin-top: 10px;
-} */
+.about > p {
+  color: #fff;
+  margin: 20px 0;
+  font-family: "Inter", sans-serif;
+}
+
+.landing > div > p {
+  margin: 10px 0;
+}
 
 ul {
   list-style-type: none;
@@ -52,10 +57,12 @@ ul {
 
 .roboto {
   font-family: "Roboto", sans-serif;
+  font-size: 24px;
 }
 
 .description {
   font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
 a {
@@ -63,20 +70,21 @@ a {
   text-decoration: none;
 }
 
-.sec2-title {
-  margin-top: 80px;
-  margin-bottom: 60px;
-  border-bottom: 1px solid grey;
-  padding-bottom: 30px;
-  text-align: center;
-  font-family: "Crete Round", serif;
-  width: 300px;
-  font-size: 40px;
+#sec2Heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 0;
 }
 
-.sec2 {
-  display: flex;
-  justify-content: center;
+.sec2 > h2 {
+  font-family: "Crete Round", serif;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.underline2 {
+  border-bottom: 1px solid black;
 }
 
 .sec3 {
@@ -85,7 +93,20 @@ a {
   padding: 15px;
 }
 
-.card1 > h2 {
+.card-text > h2 {
+  font-family: "Crete Round", serif;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.about > h2 {
+  color: rgba(255, 107, 0, 1);
+  font-family: "Crete Round", serif;
+  font-size: 60px;
+  margin-top: 90px;
+}
+
+.card1 > div > h2 {
   font-family: "Crete Round", serif;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -100,8 +121,6 @@ a {
 .box > li {
   padding: 5px;
   border: 1px solid black;
-
-  /* margin-right: 10px; */
 }
 
 .button1 {
@@ -131,19 +150,7 @@ a {
 .box2 > li {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 5px;
-
-  /* margin-right: 10px; */
-  font-family: 'Inter', sans-serif;
-}
-
-.card-text > h2 {
-  font-family: "Crete Round", serif;
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.card-text > p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .button2 {
@@ -167,19 +174,6 @@ a {
   margin-top: 120px;
 }
 
-.about > h2 {
-  color: rgba(255, 107, 0, 1);
-  font-family: "Crete Round", serif;
-  font-size: 60px;
-  margin-top: 90px;
-}
-
-.about > p {
-  color: #fff;
-  margin: 20px 0;
-  font-family: 'Inter', sans-serif;
-}
-
 .lang {
   display: flex;
   color: white;
@@ -199,7 +193,7 @@ a {
 
 .list > li {
   margin-top: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .list {
@@ -210,7 +204,7 @@ a {
 .lang > li > h3 {
   font-size: 25px;
   margin-left: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .underline {
@@ -223,7 +217,7 @@ a {
   font-size: 32px;
   line-height: 44px;
   padding: 50px 30px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 form {
@@ -248,7 +242,7 @@ li > input,
 li > textarea {
   border: none;
   padding: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   outline: none;
   width: 100%;
 }
@@ -277,4 +271,239 @@ footer {
   display: flex;
   gap: 20px;
   font-size: 22px;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.hide-desktop {
+  display: block;
+}
+
+.navIcon {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav > .fa-bars {
+    display: none;
+  }
+
+  .navIcon {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  header {
+    padding: 20px 70px;
+    font-family: "Inter", sans-serif;
+  }
+
+  header > a {
+    font-size: 20px;
+  }
+
+  .landing {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    padding: 200px 50px;
+    background-color: #1c1a19;
+    color: white;
+    background-image: url("resources/Illustration-header.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-right: 50px;
+    gap: 10px;
+    font-size: 25px;
+  }
+
+  .hey {
+    width: 500px;
+  }
+
+  h1 {
+    color: #ff6b00;
+    font-size: 72px;
+    font-family: "Crete Round", serif;
+  }
+
+  .roboto {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+  }
+
+  .description {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+  }
+
+  .sec2 {
+    position: relative;
+  }
+
+  .underline2 {
+    position: absolute;
+    left: 100%;
+    bottom: 50%;
+    width: 750px;
+  }
+
+  .card1 {
+    display: flex;
+    gap: 10;
+  }
+
+  .sec3 {
+    padding: 0 200px;
+  }
+
+  .card1 > img {
+    width: 600px;
+  }
+
+  .card1-text {
+    margin-left: 15px;
+    width: 500px;
+  }
+
+  .card1-text > p {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    width: 445px;
+  }
+
+  .card2-parent {
+    display: none;
+  }
+
+  .about {
+    background-color: #1c1a19;
+    background-image: url("resources/Frame (1).png");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 90vh;
+    padding: 120px 180px;
+    margin-top: 120px;
+  }
+
+  .about > p {
+    color: #fff;
+    margin: 20px 0;
+    font-family: "Inter", sans-serif;
+    width: 470px;
+    font-size: 20px;
+  }
+
+  .underline {
+    border-bottom: 1px solid white;
+    margin-top: 100px;
+  }
+
+  .language {
+    background-color: #1c1a19;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    justify-content: center;
+    gap: 200px;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+
+  #form-heading {
+    text-align: start;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 50px 30px;
+    font-family: "Inter", sans-serif;
+    width: 400px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  li > input,
+  li > textarea {
+    border: none;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    width: 600px;
+  }
+
+  .btn-div {
+    display: block;
+    margin: 15px 0;
+  }
+
+  #sec2Heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 120px 0;
+    padding: 0 200px;
+  }
+
+  .card2-parent-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .img {
+    width: 330px;
+  }
+
+  .card2:hover .card-text {
+    display: none;
+  }
+
+  .button2 {
+    display: none;
+  }
+
+  .card2:hover .button2 {
+    display: block;
+  }
+
+  .card2:hover {
+    background-image: url("resources/Img Placeholder (2).png");
+  }
+
+  .b {
+    display: none;
+  }
+
+  .card2:hover .b {
+    display: block;
+  }
+
+  .card2:hover .a {
+    display: none;
+  }
 }
