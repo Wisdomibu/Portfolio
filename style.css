@@ -15,7 +15,23 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  position: relative;
 }
+
+.navMobile{
+  display: none;
+  position: absolute;
+ 
+ 
+}
+
+
+#cancel{
+  display: flex;
+justify-content: flex-end;
+margin: 10px 10px 0 10px;
+}
+
 
 .landing {
   height: 90vh;
