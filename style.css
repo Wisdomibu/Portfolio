@@ -33,7 +33,7 @@ header {
   border-bottom: 1px solid #fff5e1;
   color: #fff5e1;
   font-size: 32px;
-  margin: 15px  50px 0 50px;
+  margin: 15px 50px 0 50px;
   font-family: "Inter", sans-serif;
 }
 
@@ -55,6 +55,66 @@ header {
   background-position: bottom right;
 }
 
+/* pop up design */
+
+.popupParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: 0.45s all;
+}
+
+.popupMenu {
+  background: #fff;
+  color: #000;
+  padding: 16px;
+  margin: 0 12px;
+}
+
+.project {
+  display: flex;
+  gap: 50px;
+  margin: 10px 0  40px 0;
+}
+
+.project > h2 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.menuList > li {
+  border: 1px solid rgba(151, 148, 147, 1);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.popupMenu > p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+}
+
+.popupBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popupBtn > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 129px;
+  height: 48px;
+  font-size: 15px;
+}
+
+/* End of popup design */
 h1 {
   color: #ff6b00;
   font-size: 56px;
