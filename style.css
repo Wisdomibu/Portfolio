@@ -15,6 +15,32 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  position: relative;
+}
+
+.navMobile {
+  display: none;
+  position: absolute;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+
+.fa-xmark {
+  font-size: 25px;
+}
+
+.navMobileText {
+  border-bottom: 1px solid #fff5e1;
+  color: #fff5e1;
+  font-size: 32px;
+  margin: 15px  50px 0 50px;
+  font-family: "Inter", sans-serif;
+}
+
+#cancel {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px 0 10px;
 }
 
 .landing {
