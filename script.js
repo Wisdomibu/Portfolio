@@ -367,28 +367,26 @@ document.addEventListener('click', (event) => {
   }
 });
 
-// Form validation 
-const email = document.getElementById("email");
-const form = document.querySelector("form");
-form.addEventListener("submit", (e) => {
+// Form validation
+const email = document.getElementById('email');
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 });
 
-const submitBtn = document.querySelector(".submitBtn");
-const small = document.querySelector("small");
+const submitBtn = document.querySelector('.submitBtn');
+const small = document.querySelector('small');
 let isValid = true;
-submitBtn.addEventListener("click", () => {
+submitBtn.addEventListener('click', () => {
   const emailValue = email.value.trim();
   if (emailValue !== emailValue.toLowerCase()) {
-    small.innerText = "Email should be in lowercase";
-    isValid = false; 
+    small.innerText = 'Email should be in lowercase';
+    isValid = false;
   } else {
-    small.innerText = ""; 
+    small.innerText = '';
     isValid = true;
   }
   if (isValid) {
     form.submit();
   }
-
-  console.log("submit form");
 });

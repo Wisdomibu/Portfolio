@@ -371,7 +371,7 @@ footer {
 }
 
 /* FORM ERROR FOR MOBILE */
-small{
+small {
   color: red;
   font-size: 15px;
 }
@@ -607,7 +607,7 @@ small{
   }
 
   /* form error */
-  small{
+  small {
     color: red;
     font-size: 23px;
   }
