@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   /* border: 2px solid yellow; */
 }
 
@@ -453,7 +454,7 @@ footer {
   .popupBtn {
     justify-content: start;
     gap: 20px;
-    padding:0;
+    padding: 0;
     margin: 110px 0 0 0;
     font-family: "Inter", sans-serif;
   }
