@@ -366,3 +366,29 @@ document.addEventListener('click', (event) => {
     showProject();
   }
 });
+
+// Form validation 
+const email = document.getElementById("email");
+const form = document.querySelector("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
+
+const submitBtn = document.querySelector(".submitBtn");
+const small = document.querySelector("small");
+let isValid = true;
+submitBtn.addEventListener("click", () => {
+  const emailValue = email.value.trim();
+  if (emailValue !== emailValue.toLowerCase()) {
+    small.innerText = "Email should be in lowercase";
+    isValid = false; 
+  } else {
+    small.innerText = ""; 
+    isValid = true;
+  }
+  if (isValid) {
+    form.submit();
+  }
+
+  console.log("submit form");
+});
