@@ -20,11 +20,16 @@ cancel.addEventListener('click', () => {
 
 const projectInfo = [
   {
-    name: 'Multi Post Stories',
+    mobileName: 'Multi Post Stories',
+    desktopName: 'Keeping track of hundreds  of components website',
     technology: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     img: 'resources/Snapshoot Portfolio (1).png',
     describe:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    desktopDescribe1:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    desktopDescribe2:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     liveLink: '#',
     liveSource: '#',
   },
@@ -36,18 +41,30 @@ const popupMenu = document.querySelector('.popupMenu');
 const btn = document.querySelectorAll('.btn');
 const img = document.createElement('img');
 const description = document.createElement('p');
+const description2 = document.createElement('p');
 const popupBtns = document.createElement('div');
 const popupParent = document.querySelector('.popupParent');
-
+const imgWrapforDesk = document.createElement('div');
+const descripDiv = document.createElement('div');
 const icon = document.createElement('i');
-
+//  Class Names
 icon.className = 'fa-solid fa-xmark menuCancel';
-
 ul.className = 'menuList';
+imgWrapforDesk.className = 'imgWrap';
+//  Closing
 
 const createEl = () => {
   // heading;
-  projectHead.innerHTML = `<h2>${projectInfo[0].name}</h2>`;
+  if (window.innerWidth <= 768) {
+    projectHead.innerHTML = `<h2>${projectInfo[0].mobileName}</h2>`;
+    description.innerText = projectInfo[0].describe;
+  } else {
+    projectHead.innerHTML = `<h2>${projectInfo[0].desktopName}</h2>`;
+    description.innerText = projectInfo[0].desktopDescribe1;
+    description2.innerText = projectInfo[0].desktopDescribe2;
+    description2.classList.add('description2');
+    descripDiv.append(description, description2, popupBtns);
+  }
   projectHead.append(icon);
   popupMenu.append(projectHead);
   projectHead.className = 'project';
@@ -56,16 +73,16 @@ const createEl = () => {
   ul.innerHTML = `<li>${projectInfo[0].technology[0]}</li>
                      <li>${projectInfo[0].technology[1]}</li>
                     <li>${projectInfo[0].technology[2]}</li>`;
-
   popupMenu.append(ul);
   img.src = projectInfo[0].img;
-  popupMenu.append(img);
-  description.innerText = projectInfo[0].describe;
-  popupMenu.append(description);
+  descripDiv.append(description, popupBtns);
+  descripDiv.classList.add('descriptDiv');
+  imgWrapforDesk.append(img, descripDiv);
+  popupMenu.append(imgWrapforDesk);
+
   popupBtns.innerHTML = `<button class="button1"><a href="${projectInfo[0].liveLink}">See live</a><img src="resources/Icon - Export.png"/></button>
                          <button class="button1"><a href="${projectInfo[0].liveSource}">See source</a><img src="resources/Icon -GitHub.png"/></button>`;
   popupBtns.className = 'popupBtn';
-  popupMenu.append(popupBtns);
 };
 
 //  Render the project when see Project clicked
