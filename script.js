@@ -88,9 +88,11 @@ const createEl = () => {
 //  Render the project when see Project clicked
 const showProject = () => {
   createEl();
-  popupParent.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+  popupParent.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
   popupParent.style.position = 'fixed';
-  popupParent.style.display = 'block';
+  popupParent.style.height="100vh";
+  popupMenu.style.height="80vh";
+  popupParent.style.display = 'flex';
 };
 // Event
 btn.forEach((item) => {
