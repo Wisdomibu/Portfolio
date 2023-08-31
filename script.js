@@ -366,12 +366,12 @@ document.addEventListener('click', (event) => {
     showProject();
   }
 });
-const email = document.getElementById("email");
-const form = document.querySelector("form");
-const submitBtn = document.querySelector(".submitBtn");
-const small = document.querySelector("small");
-const userName = document.getElementById("name");
-const textArea = document.getElementById("textArea");
+const email = document.getElementById('email');
+const form = document.querySelector('form');
+const submitBtn = document.querySelector('.submitBtn');
+const small = document.querySelector('small');
+const userName = document.getElementById('name');
+const textArea = document.getElementById('textArea');
 let isValid = true;
 
 submitBtn.addEventListener('click', () => {
