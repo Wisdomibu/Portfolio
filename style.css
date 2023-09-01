@@ -7,6 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* border: 2px solid yellow; */
 }
 
 header {
@@ -33,7 +35,7 @@ header {
   border-bottom: 1px solid #fff5e1;
   color: #fff5e1;
   font-size: 32px;
-  margin: 15px  50px 0 50px;
+  margin: 15px 50px 0 50px;
   font-family: "Inter", sans-serif;
 }
 
@@ -55,6 +57,61 @@ header {
   background-position: bottom right;
 }
 
+/* pop up design */
+
+.popupParent {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.popupMenu {
+  background: #fff;
+  color: #000;
+  padding: 16px;
+  margin: 0 12px 0 12px;
+}
+
+.project {
+  display: flex;
+  gap: 50px;
+  margin: 10px 0 40px 0;
+}
+
+.project > h2 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.menuList > li {
+  border: 1px solid rgba(151, 148, 147, 1);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.popupMenu > p {
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+}
+
+.popupBtn {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.popupBtn > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 129px;
+  height: 48px;
+  font-size: 15px;
+}
+
+/* End of popup design */
 h1 {
   color: #ff6b00;
   font-size: 56px;
@@ -282,6 +339,8 @@ li > textarea {
 .btn-div {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 5px;
   margin: 15px 0;
 }
 
@@ -309,6 +368,12 @@ footer {
 
 .navIcon {
   display: none;
+}
+
+/* FORM ERROR FOR MOBILE */
+small {
+  color: red;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -350,6 +415,59 @@ footer {
     background-position: right;
   }
 
+  /* Popup design for desktop */
+  .popupParent {
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popupMenu {
+    padding: 10px 30px;
+  }
+
+  .project {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .menuList {
+    gap: 5px;
+  }
+
+  .imgWrap {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgWrap > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .descriptDiv > p {
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .description2 {
+    padding-bottom: 30px;
+  }
+
+  .popupBtn {
+    justify-content: start;
+    gap: 20px;
+    padding: 0;
+    margin: 110px 0 0 0;
+    font-family: "Inter", sans-serif;
+  }
+
+  /* End */
   .icons {
     display: flex;
     flex-direction: column;
@@ -485,6 +603,13 @@ footer {
   .btn-div {
     display: block;
     margin: 15px 0;
+    gap: 20px;
+  }
+
+  /* form error */
+  small {
+    color: red;
+    font-size: 23px;
   }
 
   #sec2Heading {
