@@ -366,17 +366,14 @@ document.addEventListener('click', (event) => {
     showProject();
   }
 });
-
-// Form validation
 const email = document.getElementById('email');
 const form = document.querySelector('form');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-});
-
 const submitBtn = document.querySelector('.submitBtn');
 const small = document.querySelector('small');
+const userName = document.getElementById('name');
+const textArea = document.getElementById('textArea');
 let isValid = true;
+
 submitBtn.addEventListener('click', () => {
   const emailValue = email.value.trim();
   if (emailValue !== emailValue.toLowerCase()) {
@@ -386,6 +383,33 @@ submitBtn.addEventListener('click', () => {
     small.innerText = '';
     isValid = true;
   }
+});
+
+function storeData() {
+  const formObj = {
+    email: email.value,
+    userName: userName.value,
+    textArea: textArea.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formObj));
+}
+form.addEventListener('input', storeData);
+
+function retrieveData() {
+  const storedData = localStorage.getItem('formData');
+  if (storedData) {
+    const formData = JSON.parse(storedData);
+    email.value = formData.email;
+    userName.value = formData.userName;
+    textArea.value = formData.textArea;
+  }
+}
+
+window.addEventListener('load', retrieveData);
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  storeData();
   if (isValid) {
     form.submit();
   }
